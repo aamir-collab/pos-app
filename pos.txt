@@ -1,0 +1,27 @@
+POS MERN STACK APP
+
+INTRO (ABOUT THE APP)
+
+
+
+
+
+STRUCTURE OF THE APP
+server.js - main server file
+config.js - use to connect database with server, configures to the OS
+controllers - responsible for handling incoming requests and returning responses to the client. A controller's purpose is to receive specific requests for the application.
+middlewares - 
+models -  The model you define in the Node. js server is an abstraction of the data in your MongoDB database, which is represented as a document. Because of this abstraction, you may use the “Mongoose” schemas to construct a blueprint of how you want the added data to look and behave.
+routes - Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on). In simple terms, Routing allows targeting different routes or different URLs on our page.
+utils - 
+seeder - Seeding a database is a process in which an initial set of data is provided to a database when it is being installed. It is especially useful when we want to populate the database with data we want to develop in future. So our goal is to “feed” the database with dummy data on its initialization.
+env file - What is .env file in node JS?
+Environment variables in Node are used to store sensitive data such as passwords, API credentials, and other information that should not be written directly in code.
+
+
+Problems faced -
+
+-> Backend development-
+-Major problem i faced was while connecting my mongo db with my server. I had downloaded mongo db compass the gui but it still was not connecting . I wasted a lot of time reviewing my code at last i went on google there i found a solution . the solution was to go to control panel-> apps and tools -> services -> find Mongo Db-> and then right click on start , then it was working properly
+-Another problem i faced was while using POSTMAN API to test my apis i was unable to get or post request , solution was --
+- while connecting my database to my server in my config file i had a function mongoose.connect which is used to connect the clusters was showing an error it requires a string and i was passing my process.en.uri without semicolons i had to research a lot about it then i had to make it a string and then it was working
