@@ -1,12 +1,13 @@
+//checked
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const connecDb = require('./config/config');
+const connectDb = require('./config/config');
 const itemModel = require('./models/itemModel');
 const items = require('./utils/data');
 require('colors');
 
 dotenv.config();
-connecDb();
+connectDb();
 
 const importData = async () => {
   try {

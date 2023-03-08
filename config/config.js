@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 require('colors');
-const dotenv = require('dotenv');
-dotenv.config();
+// const dotenv = require('dotenv');
+// dotenv.config();
 //connecDB Function
 
-mongoose.set('strictQuery', false);
+// mongoose.set('strictQuery', false);
 const connectDb = async () => {
   try {
     // console.log(process.env.MONGO_URI);
