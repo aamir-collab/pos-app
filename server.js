@@ -22,7 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('dev'));
 
 //routes
-app.use('api/items', require('./routes/itemRoutes'));
+let api = require('./routes/itemRoutes');
+app.use('api/items', api);
 
 //port
 const PORT = process.env.PORT || 8080;
